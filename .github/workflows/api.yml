@@ -1,8 +1,9 @@
 name: API Test and Deploy
 on:
   push:
-    - 'services/tasks_api/**'
-    - '.github/workflows/api.yml'
+    paths:
+        - 'services/tasks_api/**'
+        - '.github/workflows/api.yml'
 jobs:
     code-quality:
         strategy:
@@ -34,4 +35,3 @@ jobs:
               run: poetry run flake8 .
             - name: Run bandit
               run: poetry run bandit .
-              
