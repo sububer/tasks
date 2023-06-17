@@ -11,6 +11,7 @@ python = "^3.10"
 fastapi = "^0.97.0"
 uvicorn = "^0.22.0"
 httpx = "^0.24.1"
+magnum = "^16.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
